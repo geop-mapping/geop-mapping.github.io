@@ -150,7 +150,7 @@
             content += "<br><br><b>Price Range (\u{20B1})</b><br>" + feature.properties.price.replace(/,/g, "<br>");
             content += "<br><br><b>Wifi</b><br>" + feature.properties.wifi;
             content += "<br><br><b>Electrical Outlet</b><br>" + feature.properties.plug;
-            content += "<br><br><a href='https://www.google.com/maps/search/?api=1&query=google&query_place_id=" + feature.properties['google place id'] + "'>View in Google Maps</a>";
+            content += "<br><br><a href='https://www.google.com/maps/search/?api=1&query=google&query_place_id=" + feature.properties['google place id'] + "' target='_blank'>View in Google Maps</a>";
             layer.bindPopup(content); //feature.properties.Name);
         }
 
