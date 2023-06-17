@@ -41,14 +41,30 @@
                     Cafes Near UP Diliman
                     <div class="leaflet-sidebar-close"><i class="fa fa-caret-right"></i></div>
                 </h1>
-                <p>Filter</p>
-                <input type="checkbox" id="toggleWifi" name="wifi">
-                <label for="toggleWifi">Has Wifi</label>
-                <br>
-                <input type="checkbox" id="toggleOutlet" name="outlet">
-                <label for="toggleOutlet">Has Electrical Outlets</label>
-                <br>
-                <p>Updated as of June 2023</p>
+                <div style="margin: 4em 0 4em 0;">
+                    <p style="font-size: 1.1rem; margin-bottom: 0;"><b>Filter</b></p>
+                    <input type="checkbox" id="toggleWifi" name="wifi" style="font-size: 1.1rem;">
+                    <label for="toggleWifi" style="font-size: 1.1rem;">Has Wifi</label>
+                    <br>
+                    <input type="checkbox" id="toggleOutlet" name="outlet">
+                    <label for="toggleOutlet" style="font-size: 1.1rem;">Has Electrical Outlets</label>
+                </div>
+                <hr>
+                <div>
+                    <p>
+                        This map shows the locations of nearby coffee shops in UP Diliman, particularly in Katipunan and Maginhawa Areas. It also provides details on its price range, wifi and plug availabilities, and its operating hours.
+                    </p>
+                    <p>
+                        You may view the reference maps <a href="https://www.facebook.com/theupgeop/posts/pfbid0RKjAAJLTVx1EqJmHXuzawFNTLFm5JSTWvFmh1yExDRMjLEHTzy3YtdKuNiNWKQGHl">in this Facebook post</a>.
+                    </p>
+                    <p>
+                        You may also view the organized spreadsheet file of these information <a href="https://tinyurl.com/CafesNearUPDSheets">in this Google Sheets document</a>.
+                    </p>
+                    <p>
+                        This map was produced under the EngaGE Initiative of <b><a href="https://www.facebook.com/theupgeop/">UP Society of Geodetic Engineering Majors (UP GEOP)</a></b>, in partnership with <b>Open Mapping Hub - Asia Pacific</b> and the <b>UP Department of Geodetic Engineering</b>.
+                    </p>
+                    <p>Updated as of June 2023.</p>
+                </div>
             </div>
     
             <!-- 
@@ -74,6 +90,17 @@
 
         .leaflet-popup-content {
             text-align: center;
+        }
+
+        input[type=checkbox]
+        {
+            /* Double-sized Checkboxes */
+            -ms-transform: scale(1.1); /* IE */
+            -moz-transform: scale(1.1); /* FF */
+            -webkit-transform: scale(1.1); /* Safari and Chrome */
+            -o-transform: scale(1.1); /* Opera */
+            transform: scale(1.1);
+            padding: 10px;
         }
     </style>
     <script>
